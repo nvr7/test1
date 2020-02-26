@@ -36,7 +36,7 @@ public class PageController {
 	@RequestMapping(value ="/create", method = RequestMethod.POST)
 	public String simpanData(Model model, Mahasiswa mahasiswa) {
 		model.addAttribute("mahasiswa", pageService.saveOrUpdate(mahasiswa));
-		return "redirect:/";
+		return "redirect:page";
 	}
 
 	@RequestMapping(value = "/edit/{id}", method = RequestMethod.GET)
@@ -48,7 +48,7 @@ public class PageController {
 	@RequestMapping(value = "/hapus/{id}")
 	public String hapus(@PathVariable Integer id) {
 		pageService.hapus(id);
-		return "redirect:/";
+		return "redirect:page";
 	}
 
 }
