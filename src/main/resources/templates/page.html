@@ -61,15 +61,15 @@
       		<td th:text="${mahasiswas.jurusan}"></td>
       		<td th:text="${mahasiswas.nim}"></td>
       		<td>
-      			<a th:href="${'/page/edit/' + mahasiswas.id}"><span class="glyphicon glyphicon-edit"></span></a>
-      			<a th:href="${'/page/hapus/' + mahasiswas.id}"><span class="glyphicon glyphicon-remove"></span></a>
+      			<a th:href="${'/edit/' + mahasiswas.id}"><span class="glyphicon glyphicon-edit"></span></a>
+      			<a th:href="${'/hapus/' + mahasiswas.id}"><span class="glyphicon glyphicon-remove"></span></a>
       		</td>
       	</tr>
       </table>
 	</div>
 	
 	<div>
-		<a class="btn btn-default" href="/page/create">Add New</a>
+		<a class="btn btn-default" href="/create">Add New</a>
 	</div>
 
     </div><!-- /.container -->
